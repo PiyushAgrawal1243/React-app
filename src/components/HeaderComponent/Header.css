@@ -1,0 +1,75 @@
+
+.app-header {
+  background-color: #282c34;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+}
+
+.links:hover {
+  background-color: #1757d5 !important;
+  color: white !important;
+  transition: all 0.5s;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+
+
+
+
+
+.rainbow:hover {
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	height: 60px;
+	overflow: hidden;
+  	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+}
+	.rainbow:hover::before {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		left: -50%;
+		top: -50%;
+		width: 300%;
+		height: 300%;
+		background-color: #399953;
+		background-repeat: no-repeat;
+		background-size: 50% 50%, 50% 50%;
+		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+		background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+		animation: rotate 4s linear infinite;
+	}
+	
+	.rainbow:hover::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 3px;
+		top: 2px;
+		width: calc(100% - 4px);
+		height: calc(100% - 4px);
+		background: #282c34;
+		border: 1px;
+		border-radius: 1px;
+	}
+
+
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
