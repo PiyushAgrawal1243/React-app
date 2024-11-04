@@ -6,6 +6,7 @@ import HomeComponent from "./components/HomeComponent/HomeComponent";
 import AboutComponent from "./components/AboutComponent/AboutComponent";
 import { lazy, Suspense } from "react";
 import LoaderComponent from "./UtillsComponet/LoaderComponent/LoaderComponent";
+import GamesComponent from "./components/Games/Games";
 
 
 function App() {
@@ -25,6 +26,9 @@ const LoginComponent = lazy(()=>import('./components/LoginComponent/LoginCompone
             <Route path="/movies" element={<MoviesComponent />} />
             <Route path="/about" element={<AboutComponent />} />
             <Route path="/subscription" element={<SubscriptionPage />} />
+            <Route path='/games' element={<GamesComponent />} />
+            <Route path='/games/:gameName' element={< GamesComponent />} />
+           
           </Routes>
           </Suspense>
         </main>

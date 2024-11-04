@@ -24,8 +24,8 @@ function HeaderComponent() {
         </div>
 
         <nav className="flex gap-3 w-[50%] h-[100%] items-center">
-          <Link to="/" className="text-white block w-[20%] text-center links ">
-            Home
+          <Link to="/games" className="text-white block w-[20%] text-center links ">
+            Games
           </Link>
           <Link
             to="/movies"
