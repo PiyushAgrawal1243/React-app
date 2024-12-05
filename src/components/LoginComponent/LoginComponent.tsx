@@ -63,7 +63,7 @@ function LoginComponent() {
                 </h6>
                 <form className="flex p-1 items-center flex-col justify-cente">
                     <div
-                        className={`flex items-center justify-center border-2 px-1 border-white bg-white  ${email.error ? "border-red-600 border-2  login-email" : ""
+                        className={`flex items-center justify-center border-2 px-1 bg-white  ${email.error ? "border-red-600 border-2  login-email" : " border-white"
                             }`}
                     >
                         <div className=" rounded-md p-3 bg-white">

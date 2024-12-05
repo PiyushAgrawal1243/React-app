@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardMedia } from "@mui/material";
 import './CardComponent.css';
+import { memo } from "react";
 export interface CardComponentProps {
   img: string;
   title: string;
@@ -14,7 +15,7 @@ function CardComponent(cardContent: CardComponentProps) {
       <CardContent className="block w-[100%] h-[100%] overflow-hidden">
         <CardMedia
           component={"img"}
-          classes="h-[100%]  w-[100%] block"
+          className="h-[100%]  w-[100%] block"
           src={cardContent.img || "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61da8438155793.57575971afe13.jpg"}
           alt="Avatar"
         />
@@ -25,4 +26,4 @@ function CardComponent(cardContent: CardComponentProps) {
   );
 }
 
-export default CardComponent;
+export default memo(CardComponent);
